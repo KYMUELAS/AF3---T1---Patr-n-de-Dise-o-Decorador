@@ -1,6 +1,6 @@
 // Esta clase abstracta es la base para todos los decoradores
 // Implementa la interface Envio y contiene una referencia al objeto decorado
-// IMPORTANTE: Esta clase "envuelve" a otro objeto Envio
+// Esta clase "envuelve" a otro objeto Envio
 abstract class DecoradorEnvio implements Envio {
     // Atributo protegido: referencia al envío que estamos decorando
     // Es "protected" para que las clases hijas puedan acceder a él

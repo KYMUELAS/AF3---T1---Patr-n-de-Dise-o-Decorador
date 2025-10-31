@@ -1,7 +1,7 @@
-/ Este decorador añade el servicio de entrega exprés al envío
+// Este decorador añade el servicio de entrega exprés al envío
 class EntregaExpresDecorador extends DecoradorEnvio {
     // Constante: define el costo adicional de la entrega exprés
-    private static final double COSTO_EXPRES = 25.00;
+    private static final double COSTO_EXPRES = 25.000;
     
     // Constructor: recibe el envío a decorar
     public EntregaExpresDecorador(Envio envio) {

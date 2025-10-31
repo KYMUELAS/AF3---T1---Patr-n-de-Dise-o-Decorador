@@ -1,7 +1,7 @@
 // Este decorador añade el servicio de seguro al envío
 class SeguroDecorador extends DecoradorEnvio {
     // Constante: define el costo adicional del seguro
-    private static final double COSTO_SEGURO = 15.00;
+    private static final double COSTO_SEGURO = 15.000;
     
     // Constructor: recibe el envío a decorar y lo pasa al constructor padre
     public SeguroDecorador(Envio envio) {
