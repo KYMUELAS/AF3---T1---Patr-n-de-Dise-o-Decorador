@@ -1,23 +1,20 @@
-// Añade el servicio de embalaje especial al envío
+// Decorador que añade el servicio de embalaje especial al envío.
 class EmbalajeEspecialDecorador extends DecoradorEnvio {
-    // Constante: define el costo adicional del embalaje especial
+    // Costo adicional por embalaje especial.
     private static final double COSTO_EMBALAJE = 10.000;
-    
-    // Constructor: recibe el envío a decorar
+
+    // Inicializa el decorador con el envío base.
     public EmbalajeEspecialDecorador(Envio envio) {
         super(envio);
     }
-    
-    // Añade el costo del embalaje especial al costo total
+
     @Override
     public double calcularCosto() {
         return super.calcularCosto() + COSTO_EMBALAJE;
     }
-    
-    // Añade el embalaje especial a la descripción
+
     @Override
-    public String obtenerDescripcion() {
-        return super.obtenerDescripcion() + " + Embalaje especial";
+    public String descripcion() {
+        return super.descripcion() + " + Embalaje especial";
     }
 }
-

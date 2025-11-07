@@ -1,10 +1,8 @@
-// Esta es la interface que define el "contrato" que deben cumplir
-// todos los envíos (tanto el estándar como los decorados)
+// Interfaz que define el contrato común para todos los tipos de envío.
 interface Envio {
-    // Método para calcular el costo total del envío
+    // Retorna el costo total del envío.
     double calcularCosto();
-    
-    // Método para obtener la descripción completa del envío
-    String obtenerDescripcion();
-}
 
+    // Retorna la descripción del envío.
+    String descripcion();
+}
